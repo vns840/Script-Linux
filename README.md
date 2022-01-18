@@ -2,7 +2,7 @@
 
 ---
 
-## Fontes dos dados
+## Sistema Operacional
 
 Script de intstalação de software e dependecias
 
@@ -18,6 +18,7 @@ Script usado e testado em:
 - Visual Studio Code
 - Atom
 - NodeJs > last version (stable)
+- DBeaver
 - Wps Office 2019 > (Snap)
 - Vivaldi
 - Google Chome
