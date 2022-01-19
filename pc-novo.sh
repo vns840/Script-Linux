@@ -1,11 +1,11 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 sudo dpkg --configure -a
 sudo apt-get upgrade -y
 ## upgrade system
 sudo apt-get update
-sudo apt install software-properties-common apt-transport-https wget
+sudo apt install software-properties-common apt-transport-https wget -y
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt-get install code -y
@@ -16,12 +16,12 @@ sudo snap connect wps-2019-snap:alsa :alsa
 sudo snap connect wps-2019-snap:pulseaudio :pulseaudio
 sudo snap connect wps-2019-snap:removable-media :removable-media
 #Wps 2019 Snap
-sudo apt install curl
+sudo apt install curl -y
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ##NodeJS
 sudo apt-get update
-wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- | sudo apt-key add -
+wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- | sudo apt-key add - -y
 sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
 sudo apt install atom -y
 ##DBeaver
@@ -46,10 +46,10 @@ sudo apt-get install -f -y
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 sudo apt-get update
-sudo apt-get install anydesk
+sudo apt-get install anydesk -y
 ##Anydesk
 sudo apt-get update
-sudo apt-get install gparted
+sudo apt-get install gparted -y
 ##gparted
 sudo apt-get install gnome-tweak-tool -y
 ##Gnome-tweak

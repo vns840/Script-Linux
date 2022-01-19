@@ -32,6 +32,6 @@ Script usado e testado em:
 
 ---
 
-1 - chmod a+x nomeDoArquivo.sh
-2 - ./nomeDoArquivo.sh
+1 - chmod a+x nomeDoArquivo.sh <br>
+2 - ./nomeDoArquivo.sh <br>
 3 - agaurda o termino do processo, ao fim do processo a maquina ira reniciar
