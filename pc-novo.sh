@@ -20,7 +20,10 @@ sudo apt install curl -y
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ##NodeJS
-
+sudo sh -c 'echo "deb http://repo.vivaldi.com/stable/deb/ stable main" >> /etc/apt/sources.list'
+wget -q -O - http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
+sudo apt-get update
+sudo apt install vivaldi-stable
 ##Vivaldi
 sudo apt-get update
 wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- | sudo apt-key add - -y
