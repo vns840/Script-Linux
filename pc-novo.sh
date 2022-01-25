@@ -6,9 +6,9 @@ sudo apt-get upgrade -y
 ## upgrade system
 sudo apt-get update
 sudo apt install software-properties-common apt-transport-https wget -y
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt-get install code -y
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - -y
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" -y
+sudo apt install code -y
 ##Vscode
 sudo snap install wps-2019-snap -y
 sudo snap connect wps-2019-snap:cups-control :cups-control
@@ -20,24 +20,24 @@ sudo apt install curl -y
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ##NodeJS
+
+##Vivaldi
 sudo apt-get update
 wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- | sudo apt-key add - -y
-sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
+sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" -y
 sudo apt install atom -y
 ##DBeaver
-sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce -y
 sudo apt-get update
 sudo apt-get install dbeaver-ce -y
 ##Atom
 sudo apt-get update
-wget -qO- http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
-sudo add-apt-repository "deb [arch=i386,amd64] http://repo.vivaldi.com/stable/deb/ stable main"
+wget -qO- http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add - -y
+sudo add-apt-repository "deb [arch=i386,amd64] http://repo.vivaldi.com/stable/deb/ stable main" -y
 sudo apt install vivaldi-stable -y
 ##Vivaldi
-sudo apt-get update
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get install google-chrome-stable -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
 ##GoogleChome
 wget "https://discordapp.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo dpkg -i discord.deb
