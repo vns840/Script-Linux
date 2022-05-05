@@ -26,6 +26,7 @@ Script usado e testado em:
 - Gparted
 - Gnome-Tweak
 - Gnome-Extensions
+- Extensões : OpenWeatherMap, sound-output-device-chooser
 - Pacote de atualização do sistema
 
 ## Execução do Aquirvo
