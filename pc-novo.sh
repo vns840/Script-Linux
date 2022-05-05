@@ -16,12 +16,6 @@ wget -q https://packagecloud.io/AtomEditor/atom/gpgkey -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main"
 sudo apt install atom
 ##Atom
-sudo snap install wps-2019-snap -y
-sudo snap connect wps-2019-snap:cups-control :cups-control
-sudo snap connect wps-2019-snap:alsa :alsa
-sudo snap connect wps-2019-snap:pulseaudio :pulseaudio
-sudo snap connect wps-2019-snap:removable-media :removable-media
-#Wps 2019 Snap
 sudo apt install curl -y
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -39,6 +33,11 @@ sudo apt install atom -y
 sudo add-apt-repository ppa:serge-rider/dbeaver-ce -y
 sudo apt-get update
 sudo apt-get install dbeaver-ce -y
+##insomnia
+echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+sudo apt-get update
+sudo apt-get install insomnia -y    
 ##Atom
 sudo apt-get update
 wget -qO- http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add - -y
@@ -63,6 +62,11 @@ sudo apt-get install gparted -y
 sudo apt-get install gnome-tweak-tool -y
 ##Gnome-tweak
 sudo apt install gnome-shell-extensions -y
+sudo apt-get install gnome-shell-extension-weather -y
+cd ~/.local/share/gnome-shell/extensions/
+git clone https://github.com/kgshank/gse-sound-output-device-chooser.git
+cp -r gse-sound-output-device-chooser/sound-output-device-chooser@kgshank.net .
+rm -rf "gse-sound-output-device-chooser"
 ##Gnome-extensions
 
 echo "Operação concluida com sucesso"
