@@ -63,6 +63,9 @@ sudo apt install gnome-tweaks -y
 ##Gnome-tweak
 sudo apt install gnome-shell-extensions -y
 ##Gnome-extensions
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+sudo dpkg -i gitkraken-amd64.deb
+##Git-Kraken
 
 echo "Operação concluida com sucesso"
 echo "Para Concluir a instalação estamos reniciando sua maquina"

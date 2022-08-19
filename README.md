@@ -19,14 +19,13 @@ Script usado e testado em:
 - Atom
 - NodeJs > last version (stable)
 - DBeaver
-- Wps Office 2019 > (Snap)
 - Vivaldi
 - Google Chome
 - Discord
 - Gparted
 - Gnome-Tweak
 - Gnome-Extensions
-- Extensões : OpenWeatherMap, sound-output-device-chooser
+- Git Kraken
 - Pacote de atualização do sistema
 
 ## Execução do Aquirvo
