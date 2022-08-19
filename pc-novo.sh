@@ -59,14 +59,9 @@ sudo apt-get install anydesk -y
 sudo apt-get update
 sudo apt-get install gparted -y
 ##gparted
-sudo apt-get install gnome-tweak-tool -y
+sudo apt install gnome-tweaks -y
 ##Gnome-tweak
 sudo apt install gnome-shell-extensions -y
-sudo apt-get install gnome-shell-extension-weather -y
-cd ~/.local/share/gnome-shell/extensions/
-git clone https://github.com/kgshank/gse-sound-output-device-chooser.git
-cp -r gse-sound-output-device-chooser/sound-output-device-chooser@kgshank.net .
-rm -rf "gse-sound-output-device-chooser"
 ##Gnome-extensions
 
 echo "Operação concluida com sucesso"
