@@ -8,8 +8,7 @@ Script de intstalação de software e dependecias
 
 Script usado e testado em:
 
-- Pop!\_OS > 21.04 , 21.10
-- Ubuntu > 21.04 , 21.10
+- Ubuntu > 22.04
 
 ## Lista de Programas existentes no script
 
@@ -24,8 +23,8 @@ Script usado e testado em:
 - Discord
 - Gparted
 - Gnome-Tweak
-- Gnome-Extensions
 - Git Kraken
+- Insomnia
 - Pacote de atualização do sistema
 
 ## Execução do Aquirvo
